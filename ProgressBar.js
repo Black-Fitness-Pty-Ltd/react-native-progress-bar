@@ -44,7 +44,8 @@ export default class ProgressBar extends React.Component {
 		Animated.timing(this.state.progress, {
 			easing: this.props.easing,
 			duration: this.props.easingDuration,
-			toValue: this.props.progress
+			toValue: this.props.progress,
+			useNativeDriver: false,
 		}).start()
 	}
 }
